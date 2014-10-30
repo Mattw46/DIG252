@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8" />
+    <title>My First Guitar</title>
+    <link href="styles/main_style.css" rel="stylesheet">
+    <!-- -->
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- -->
+    <script>
+    	$(document).ready(function() {
+    		$('.menu-icon').click(function() {
+    			$('#menu').css("left", "0px");
+    			/*$('.menu-icon').css("display", "none");*/
+    		}); // end click
+    		$('.menu-close').click(function() {
+    			$('#menu').css("left", "-150px");
+    			$('.menu-icon').css("display", "block");
+    		}); // end click
+    	}); // end ready
+    </script>
+  </head>
+  <body>
+  	<div id="menu">
+  		<p class="menu-close">Close<p>
+  		<a href="#" class="menu-item">Home</a><!-- Consider adding icon to make more visual -->
+  		<a href="#intro" class="menu-item">Instructions</a>
+  		<a href="#carousel" class="menu-item">Guitars</a>
+  	</div>
+  	<img src="images/icons/menu.png" alt="menu" class="menu-icon"/>
+  	<!--<img src="images/icons/menu-pressed.png" alt="menu" class="menu-icon-on"/>-->
+  	<div id="home">
+  		<img src="images/logo-copy.png" alt="logo"/>
+  		
+  		<div id="Home-Text">
+  			<h4>Choosing your first Guitar</h4>
+  			<p>Is a big decision and here at (Insert name) we understand. You need to decide what kind of 
+  				music you want to play, do your research to find out what suits not just your music style but fits 
+  				your style and makes the journey learning music easy.</p>
+  			<p>Start your journey to becoming a guitarist by choosing from the guitars to find out more, hover over the
+  				guitar for a brief outline and choose the type you like, click the guitar for more information</p>
+  		</div>
+  		<a href="#intro" id="home-down" style="text-decoration: none; color: white;">Down</a> <!-- To be replaced with down icon -->
+  		<img src="images/23DeanMustaineZero-copy.png" alt="Homepage Image" id="LogoImage"/> <!-- http://www.flatguitars.com/-->
+  	</div>
+  	<div id="intro">
+  		<a href="#home" id="intro-up" style="text-decoration: none; color: white;">Up</a> <!-- To be replaced with up icon -->
+  		<div id="HowToText">
+  			<h3>How To Choose Your Guitar</h3>
+  			<p>Choosing your first guitar is a big decision, it can be detrimental to your success in
+  			learning to play the guitar. Choosing the correct guitar should allow you to get the sound and feel 
+  			for the music you want to learn. choosing the wrong guitar</p>
+  		</div>
+  		<img src="images/How-To_Place-Holder.png" alt="How To Guide" id="HowTo"/>
+  		<a href="#carousel" id="intro-down" style="text-decoration: none; color: white;">Down</a> <!-- To be replaced with down icon -->
+  	</div>
+  	<div id="carousel">
+  		<div id="guitar-nav" style="float: right; width: 25px; margin-right: 20px;">
+  			<a href="#home" id="guitar-home" style="text-decoration: none; color: black;">Home</a> <!-- To be replaced with up icon -->
+  			<a href="#intro" id="guitar-up" style="text-decoration: none; color: black;">Up</a> <!-- To be replaced with up icon -->
+  		</div>
+  		<!-- Add carousel here -->
+  		<div id="guitar-row" style="width: 95%; margin-left: 30px;">
+  			<a href="guitars/gibson.html" ><img src="images/carousel/01GibsonLesPaulBullseye.png" alt="Les Paul" /></a><!-- http://www.flatguitars.com/-->
+  			<a href="guitars/prs.html" ><img src="images/carousel/05PRSTremonti.png" alt="PRS" /></a><!-- http://www.flatguitars.com/-->
+  			<a href="guitars/gretsch.html" ><img src="images/carousel/09GretschBrianSetzer.png" alt="Gretsch" /></a><!-- http://www.flatguitars.com/-->
+  			<a href="guitars/gibson_sg.html" ><img src="images/carousel/11GibsonSGAngusYoung.png" alt="GibsonSG" /></a><!-- http://www.flatguitars.com/-->
+  			<a href="guitars/fender-stratocaster.html" ><img src="images/carousel/13FenderStratocaster.png" alt="FenderStratocaster" /></a><!-- http://www.flatguitars.com/-->
+  		</div>
+  	</div>
+  </body>
+</html>
